@@ -190,9 +190,9 @@ var blinkEventCount = 0;
 
 window.setInterval(function() {
     blinkEventCount = 1+blinkEventCount;
-    if (blinkEventCount%2==1) {clearEyes(); drawEyesClosed ()};
-    if (blinkEventCount%2==0) {drawEyesOpen ()};
-}, 3*1000);
+    if (blinkEventCount%2==0) {clearEyes(); drawEyesClosed ();}
+    else {drawEyesOpen ();}
+}, 2*1000);
 
 
 /* diese Zeile:
